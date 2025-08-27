@@ -1,0 +1,8 @@
+
+{% extends "base.html" %}
+{% block content %}
+<h1 class="headline">مرحبا بكم</h1>
+<h2 class="names">{{ names }}</h2>
+<p class="blessing">نسعد بلقائكم في حفل الزواج. يرجى مسح كود الدعوة للدخول.</p>
+<a class="btn" href="{{ url_for('manual') }}">فحص الدعوة يدوياً</a>
+{% endblock %}
